@@ -29,11 +29,20 @@
         <div class="container">
             <div class="row">
 
-                <div class="col">
-                    <h1 style="font-size:100px;">Mitchell McKenna</h1>
+                <div class="col col-10 order-1">
+                    <h1 style="font-size:100px;"><a class="emphasis">Mitchell </a> <a class="emphasis">McKenna</a></h1>
                 </div>
-                <div class="col-md-4 col-xl-2 my-auto">
-                    <a role="button" class="btn btn-lg btn-light" data-toggle="modal" data-target="#contactModal">Contact Me</a>
+
+                <div class="col col-12 headerWrapper order-3">
+                    <h2 class="words">
+                        <span>Computer Programmer</span>
+                        <span>Software Engineer</span>
+                        <span>Full Stack Developer</span>
+                        <span>Computer Programmer</span>
+                    </h2>
+                </div>
+                <div class="col-12 col-md-2 mb-1 my-auto order-4 order-md-2 d-flex justify-content-center">
+                    <a role="button" class="btn btn-lg btn-light text-nowrap" data-toggle="modal" data-target="#contactModal">Contact Me</a>
                 </div>
             </div>
         </div>
@@ -46,32 +55,32 @@
                     </div>
                     <div class="modal-body">
                         <div class="container-fluid">
-                            <form>
+                            <form action="https://formsubmit.co/e9803ca66b84654d0aec1e5e3edced4a" method="POST">
                                 <div class="form-group row">
                                     <label for="firstName" class="col-md-2 col-form-label text-dark">First Name</label>
                                     <div class="col-md-10">
-                                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required/>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="lastName" class="col-md-2 col-form-label text-dark">Last Name</label>
                                     <div class="col-md-10">
-                                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required/>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="areaCode" class="col-md-2 col-form-label text-dark">Contact Tel.</label>
+                                    <label for="areaCode" class="col-md-2 col-form-label text-dark">Phone Number</label>
                                     <div class="col-5 col-md-3">
-                                        <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
+                                        <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area Code" />
                                     </div>
                                     <div class="col-7">
-                                        <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
+                                        <input type="tel" class="form-control" name="telNum" placeholder="Phone Number" />
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="email" class="col-md-2 col-form-label text-dark">Email</label>
                                     <div class="col-md-10">
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required/>
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -122,7 +131,7 @@
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                     <li class="breadcrumb-item active">Résumé</li>
                 </ol>
-                <h2>Résumé</h2>
+                <h2><a class="emphasis">Résumé</a></h2>
                 <hr />
             </div>
         </div>
@@ -130,7 +139,8 @@
             <p>It appears you don't have a PDF plugin for this browser.
              No biggie... you can <a href="/pdf/MITCHELLMCKENNA-RESUME.pdf">click here to
             download the PDF file.</a></p>  
-          </object>
+        </object>
+    </div>
 
     <footer class="site-footer">
         <div class="container">

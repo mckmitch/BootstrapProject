@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- endbuild -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,16 +26,24 @@
 </head>
 
 <body>
-
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
 
-                <div class="col">
-                    <h1 style="font-size:100px;">Mitchell McKenna</h1>
+                <div class="col col-10 order-1">
+                    <h1 style="font-size:100px;"><a class="emphasis">Mitchell </a> <a class="emphasis">McKenna</a></h1>
                 </div>
-                <div class="col-md-4 col-xl-2 my-auto">
-                    <a role="button" class="btn btn-lg btn-light" data-toggle="modal" data-target="#contactModal">Contact Me</a>
+
+                <div class="col col-12 headerWrapper order-3">
+                    <h2 class="words">
+                        <span>Computer Programmer</span>
+                        <span>Software Engineer</span>
+                        <span>Full Stack Developer</span>
+                        <span>Computer Programmer</span>
+                    </h2>
+                </div>
+                <div class="col-12 col-md-2 mb-1 my-auto order-4 order-md-2 d-flex justify-content-center">
+                    <a role="button" class="btn btn-lg btn-light text-nowrap" data-toggle="modal" data-target="#contactModal">Contact Me</a>
                 </div>
             </div>
         </div>
@@ -47,32 +56,32 @@
                     </div>
                     <div class="modal-body">
                         <div class="container-fluid">
-                            <form>
+                            <form action="https://formsubmit.co/e9803ca66b84654d0aec1e5e3edced4a" method="POST">
                                 <div class="form-group row">
                                     <label for="firstName" class="col-md-2 col-form-label text-dark">First Name</label>
                                     <div class="col-md-10">
-                                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required/>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="lastName" class="col-md-2 col-form-label text-dark">Last Name</label>
                                     <div class="col-md-10">
-                                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required/>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="areaCode" class="col-md-2 col-form-label text-dark">Contact Tel.</label>
+                                    <label for="areaCode" class="col-md-2 col-form-label text-dark">Phone Num.</label>
                                     <div class="col-5 col-md-3">
-                                        <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
+                                        <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area Code" />
                                     </div>
                                     <div class="col-7">
-                                        <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
+                                        <input type="tel" class="form-control" name="telNum" placeholder="Phone Number" />
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="email" class="col-md-2 col-form-label text-dark">Email</label>
                                     <div class="col-md-10">
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required/>
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -92,7 +101,7 @@
                                         <button type="submit" class="btn btn-dark">Send Message</button>
                                     </div>
                                 </div>
-                            </form>                   
+                            </form>                                  
                         </div>
                     </div>
                 </div>
@@ -123,115 +132,60 @@
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                     <li class="breadcrumb-item active">About Me</li>
                 </ol>
-               <h2>About Me</h2>
+               <h2><a class="emphasis">About Me</a></h2>
                <hr />
             </div>
         </div>
 
+        
         <div class="row row-content">
-            <div class="col-12">
+            <div data-aos="fade-up" class="col-12">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/wireframe.png" width="50%" alt="Wireframe1" />
+                    <img class="d-flex mr-3 img-thumbnail" src="img/grad.JPG" width="500px" alt="grad" />
                     <div class="media-body align-self-center">
                         <h3>Wireframe Subject 1</h3>
-                        <p class="d-none d-sm-block">Wireframe Text 1</p>
+                        <p class="d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-12 mt-5">
+            <div data-aos="fade-up" class="col-12 mt-5">
                 <div class="media">
                     <div class="media-body align-self-center">
                         <h3>Wireframe Subject 2</h3>
-                        <p class="d-none d-sm-block">Wireframe Text 2</p>
+                        <p class="d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
-                    <img class="d-flex mr-3 img-thumbnail" src="img/wireframe.png" width="50%" alt="Wireframe2" />
+                    <img class="d-flex mr-3 img-thumbnail" src="img/family.JPG" width="500px" alt="family" />
                 </div>
             </div>
 
-            <div class="col-12 mt-5">
+            <div data-aos="fade-up" class="col-12 mt-5">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/wireframe.png" width="50%" alt="Wireframe1" />
+                    <img class="d-flex mr-3 img-thumbnail" src="img/friends.JPEG" width="500px" alt="friends" />
                     <div class="media-body align-self-center">
                         <h3>Wireframe Subject 3</h3>
-                        <p class="d-none d-sm-block">Wireframe Text 3</p>
+                        <p class="d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </div>
             </div>
-            
-            
-            <div class="col">
-                <div class="card bg-light mt-3">
-                    <blockquote class="blockquote card-body">
-                        <p class="mb-0">Wireframe quote</p>
-                        <footer class="blockquote-footer">Wireframe author,
-                            <cite title="Source Title">"Wireframe Source"
-                            </cite>
-                        </footer>
-                    </blockquote>
-                </div>
-            </div>   
-        </div>
 
-        <div class="row row-content">
-            <div class="col">
-                <div id="accordion">
-                    <div class="card">
-                        <div role="tab" class="card-header">
-                            <h4>
-                                <a data-toggle="collapse" data-target="#Wireframeaccordion1">
-                                    Wireframe Title <small>Wireframe Subtitle</small>
-                                </a>
-                            </h4>
-                            <div class="collapse show" id="Wireframeaccordion1" data-parent="#accordion">
-                                <div class="card-body">
-                                    <p class="d-none d-sm-block">Wireframe Text.</p>
-                                </div>
-                            </div>
-                        </div>
+            <div data-aos="fade-up" class="col-12 mt-5">
+                <div class="media">
+                    <div class="media-body align-self-center">
+                        <h3>Wireframe Subject 4</h3>
+                        <p class="d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
-                    <div class="card">
-                        <div role="tab" class="card-header">
-                            <h4>
-                                <a class="collapsed" data-toggle="collapse" data-target="#Wireframeaccordion2">
-                                    Wireframe Title 2 <small>Wireframe Subtitle</small>
-                                </a>
-                            </h4>
-                            <div class="collapse" id="Wireframeaccordion2" data-parent="#accordion">
-                                <div class="card-body">
-                                    <p class="d-none d-sm-block">Wireframe Text</p>
-                               </div>
-                            </div>
-                        </div>
+                    <img class="d-flex mr-3 img-thumbnail" src="img/coffee.jpg" width="500px" alt="coffee" />
+                </div>
+            </div>
+
+            <div data-aos="fade-up" class="col-12 mt-5">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/gamer.JPG" width="500px" alt="gamer" />
+                    <div class="media-body align-self-center">
+                        <h3>Wireframe Subject 5</h3>
+                        <p class="d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
-                    <div class="card">
-                        <div role="tab" class="card-header">
-                            <h4>
-                                <a class="collapsed" data-toggle="collapse" data-target="#Wireframeaccordion3">
-                                    Wireframe Title 3 <small>Wireframe Subtitle</small>
-                                </a>
-                            </h4>
-                            <div class="collapse" id="Wireframeaccordion3" data-parent="#accordion">
-                                <div class="card-body">
-                                    <p class="d-none d-sm-block">Wireframe Text.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div role="tab" class="card-header">
-                            <h4>
-                                <a class="collapsed" data-toggle="collapse" data-target="#Wireframeaccordion4">
-                                    Wireframe Title 4 <small>Wireframe Subtitle</small>
-                                </a>
-                            </h4>
-                            <div class="collapse" id="Wireframeaccordion4" data-parent="#accordion">
-                                <div class="card-body">
-                                    <p class="d-none d-sm-block">Wireframe Text.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
                 </div>
             </div>
         </div>
@@ -269,6 +223,11 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- endbuild -->
 
 

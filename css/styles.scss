@@ -43,8 +43,12 @@ header {
     background-color: $color-mid;
 }
 
-.carousel {
-    border: solid $color-secondary;
+.carousel img {
+    position:relative;
+    top:0;
+    min-width:100%;
+    height:auto;
+    max-width:100%;
 }
 
 .carousel-caption {
@@ -73,4 +77,45 @@ a, a:hover {
     right: 0;
     bottom: 0;
     z-index: 100;
+}
+
+h2 span {
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    animation: spin_words 6s infinite;
+}
+@keyframes spin_words{
+    10%{
+        transform: translateY(-110%);
+    }
+    33%{
+        transform: translateY(-100%);
+    }
+    43%{
+        transform: translateY(-210%);
+    }
+    66%{
+        transform: translateY(-200%);
+    }
+    76%{
+        transform: translateY(-310%);
+    }
+    100%{
+        transform: translateY(-300%);
+    }
+}
+
+.words{
+    overflow: hidden;
+}
+.headerWrapper{
+    height: 50px;
+    display: flex;
+}
+
+
+a.emphasis:hover {
+    color: #ff0000;
+    font-style: italic;
 }
